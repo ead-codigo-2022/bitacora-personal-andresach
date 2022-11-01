@@ -1,0 +1,23 @@
+*{margin:0; margin: 0;}
+*{box-sizing: border-box;}
+
+.entry-content{
+    font-family: 'Open Sans ' , Arial, Helvetica, sans-serif; /*Google fonts, Latino type se busca la tipografia, definir tamaño, se recomienda utilizar
+    solo los tamaños que se utilizaran, no todos. Descargar o importar Font-Share y */
+    font-size: 10rem;
+    font-weight: bolder;
+}
+:root {
+    --nombre-variable: #bf4b31;
+}
+.entry-title{
+    var(--nombre-variable);
+}
+.parrafos{
+    font-size: 100px;
+  
+}
+.content{
+    font-size: large;
+    font-weight: 100;
+}

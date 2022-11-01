@@ -1,0 +1,24 @@
+.main-title{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style:italic;
+    font-size: 1rem;
+
+}
+.content{}
+
+.generico{max-width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+    text-decoration-color: aliceblue;
+    
+    
+}
+.generico-g {display: inline-block;
+    padding: 20px,20px,20px,20px;
+    
+    text-align: center;
+}
+
+.boton-a{background-color: rgb(95, 6, 179);}
+.boton-b{background-color: rgb(64, 64, 65);}

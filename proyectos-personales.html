@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/processing.js"></script>
+    <title>Andrés Aliaga Chandía</title>
+</head>
+<body>
+    <header class="nav">
+        <a class="nav_logo activ" href="./index.html">Bitácora Personal</a>
+        <a class="nav_manu" href="./soy.html">Quién soy</a>
+        <a class="nav_manu" href="./ejercicios.html">Ejercicios DdC(2022) </a>
+        <a class="nav_manu" href="./proyectos-personales.html">Proyectos Personales</a>
+        
+    </header>
+    <div><h2>Arte digital</h2>
+        <script  type="text/processing">
+            Particula[] P;
+            float posX, posY;
+            int c;  //cantidad de elementos.
+            int count;
+            class Particula {
+                float x, y;
+                float dir;
+                float vel;
+                int vect;
+                float contador;
+
+
+                Particula(float a, float b) {
+                    x=a;
+                    y=b;
+                    dir=1;
+
+                    vel=0.5;
+                    vect=1;
+                    contador=200;
+                }
+
+
+                void cuerpo() {noFill();
+                
+                    //fill(255-random(contador), 255-random(contador*1), 255-contador+200);
+                    stroke(255-contador*10, 255-random(contador*10),255-random(contador*1));
+                    strokeWeight(0.2);
+                    ellipse(x, y, 0.2, 0.2);
+                }
+                void movimiento() {
+                    contador =contador-0.1;
+                    float ruidx=random(-0.1, 0.1);
+                    dir =random(-0.1, 0.1);
+                    x=x+contador*ruidx*vel*vect;
+                    y=y+contador*dir*vel*vect;
+                }
+                void retorno() {
+                    if (x<=1+contador*2||x>width-contador*2) {
+                    vect=vect*-1;
+                    }
+                    if (y<=1+contador*2||y>height-contador*2) {
+                    vect=vect*-1;
+                    }
+                }
+            }
+
+            void setup () {
+            size (1000, 500);
+            background(0);
+            c=int(random(1000));
+            count = c;
+
+            P = new Particula[count];
+            int indice=0;
+            for (int index=0; index<c; index++) {
+            
+                P[index]= new Particula(random(200,width-200), random(200,height-200));}}
+                
+            //}
+
+
+
+            void draw() {//background(random(5));
+            for (Particula mod : P) {
+            
+
+                mod.movimiento();
+                mod.cuerpo();
+            mod.retorno();
+            // }
+            if (mousePressed){Particula;}
+            }}
+
+        </script>
+
+        <canvas class="contenedor__script" id="sketch" style="border: 1px solid black ;"></canvas>
+    </div>
+    <div><h2>Escultura</h2></div>
+    <div><h2>Robotica</h2></div>
+    
+</body>
+</html>

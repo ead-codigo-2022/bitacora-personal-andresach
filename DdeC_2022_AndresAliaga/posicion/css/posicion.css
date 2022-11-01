@@ -1,0 +1,16 @@
+.container{
+    height: 100px;
+    width: auto;
+    text-align: center;
+    background-color: darkgray;
+    color: black;
+    border: 1rem;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.container__diagram{
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
