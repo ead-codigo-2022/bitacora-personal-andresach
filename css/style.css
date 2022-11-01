@@ -25,7 +25,8 @@
 
 }
 
-.nav_logo {color: var(--c);
+.nav_logo {
+    color: var(--c);
     text-decoration: none;
     font-size: 1.8rem;
     padding: 10px;
@@ -78,5 +79,58 @@
     font-size: 1rem;
     grid-column: 2/3;
 }
-.contenedor__script{
-    z-index: 1;}
+
+.contenedor__script {
+    z-index: 1;
+}
+
+.contenedor-presentacion {
+   
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column: 100%;
+   
+}
+
+.contenedor-presentacion__presentacion {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    column-gap: 20px;
+    grid-row: 1/2;
+}
+
+.contenedor-presentacion__presentacion__texto {padding: 20px 10px 0px 20px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    grid-column: 1/2;
+    
+}
+.contenedor-presentacion__presentacion__texto__link{text-decoration:solid;
+font-weight: bolder;
+color: black;}
+
+.contenedor-presentacion__presentacion__imagen {
+    padding-top: 25%;
+    grid-column: 2/3;
+    max-width: 100%;
+}
+
+.contenedor-presentacion__titulo-intereses{grid-row: 2/3;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: darkslategray;
+    color: ghostwhite;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.contenedor-presentacion__intereses{grid-row: 3/4;
+display: grid;
+grid-template-columns: 33% 33% 33%;}
+
+
+.lista{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration:solid;
+font-weight: bolder;
+font-size: 1.5rem;
+}
